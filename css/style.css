@@ -1,0 +1,64 @@
+body{
+    background-color: burlywood;
+}
+
+.dot1 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    animation-name: dot1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+  }
+@keyframes dot1{
+    0%{top: -500px;}
+    100%{top: 0;}
+    
+}
+
+  .dot2 {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+    animation-name: dot2;
+    animation-duration: 5s;
+  }
+@keyframes dot2{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+    
+}
+
+  .dot3 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    animation-name: dot3;
+    animation-duration: 3s;
+    position: relative;
+    
+  }
+  @keyframes dot3{
+    0%{transform: rotateY(0deg);}
+    100%{transform:rotateY(360deg);}
+    
+}
+
+  .container{
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    text-align: center;
+    border: black solid 2px;
+    
+  }
